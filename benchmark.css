@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    min-height: 100vh;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-color: #3ee577;
+    background-image: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%);
+    animation: fadeInDown 1.5s;
+}
+
+.intro-section h1 {
+    font-size: 5rem;
+}
+
+.fa-brain {
+  animation: change-background 6s ease infinite;
+}
+
+.intro-items {
+    margin: 0 auto 20px;
+}
+
+.intro-section p {
+    font-size: 1.5rem;
+}
+
+.intro-section button {
+    padding: 1rem;
+    width: 150px;
+    font-size: 1.1em;
+    border-radius: .3em;
+    box-shadow: 2px 2px 5px black;
+    background-color: black;
+    color: #5ef791;
+    cursor: pointer;
+}
+
+.test-section {
+    display: flex;
+    max-width: 750px;
+    margin: 40px auto 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.test-boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    width: 350px;
+    margin: 10px auto;
+    transition: ease-in-out 0.2s;
+    line-height: 50pt;
+    animation: fadeInUp 2s;
+}
+
+.test-boxes h2 {
+    margin-top: 5px;
+}
+
+.test-boxes:hover {
+    transform: translateY(-10px);
+    background-image: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%);
+    cursor: pointer;
+    color: #fff;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa-bolt 
+{
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+
+  @keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    } 
+  
+    @-webkit-keyframes fadeInDown {
+      0% {
+          opacity: 0;
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+      }
+      100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+      }
+  
+  }
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+
+  @keyframes change-background {
+    0% {
+      color :#000000;
+    }
+    50% {
+      color: rgba(179, 179, 179, 0.534);
+    }
+    100% {
+      color : #000000;
+    }
+  }

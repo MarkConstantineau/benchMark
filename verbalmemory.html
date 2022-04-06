@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="verbalmemory.css">
+    <script src="verbalmemory.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-brain"></i> benchMark</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro-section">
+        <div id="intro-div">
+            <i class="fa-solid fa-book fa-7x"></i>
+            <h1 class="intro-items">Verbal Memory</h1>
+            <p class="intro-items">You will be shown words one at a time, if you think  you've seen the word before hit SEEN <br> if you think it's a new word hit NEW.</p>
+            <button id = "start" class="intro-items">Start</button>
+        </div>
+
+        <div id="seenDiv">
+            <span>
+                <h2 id = "lives" class="livesScore">Lives | 3</h2>
+                <h2 id = "score" class="livesScore">Score | 0</h2>
+            </span>
+            <h1 id="randomWord">random?word</h1>
+            <span>
+                <button id = "seenBtn" class="seenNewBtns">Seen</button>
+                <button id = "newBtn" class="seenNewBtns">New</button>
+            </span>
+        </div>
+
+        <div id="resultDiv">
+            <i class="fa-solid fa-book fa-5x"></i>
+            <h2>Verbal Memory</h2>
+            <h1 id="resultWords">0 Words</h1>
+            <h3>Save score or keep trying to beat your record!</h3>
+            <span>
+                <button id = "saveBtn" class="saveTryBtns">Save score</button>
+                <a href = "verbalmemory.html"><button id = "tryAgainBtn" class="saveTryBtns">Try again</button></a>
+            </span>
+        </div>
+    </div>
+
+    <div class="bottom-section">
+        <div class='row'>
+            <div class='column'>
+              <div class='left-side'>
+                    <h1>Fun Facts !</h1>
+                    <ul>
+                        <li> ⚪ Someone was able to memorize 410 random words successfully in 15 minutes.</li>
+                        <li> ⚪ The best way to memorize words is to constantly repeat them in your head.</li> 
+                    </ul>
+              </div>
+            </div>
+
+            <div class='column'>
+              <div class='right-side'>
+                <h1>Verbal Memory</h1>
+                <p>
+                    This test is meant for your short-term memory and how many words you can memorize at once. <br><br>
+                    There is a list of 200 words, you will have to remember if you seen the word or if it's new to you. <br><br>
+                    If you make a mistake, you will lose a life. If you end up losing all 3, the test will be over. <br><br>
+                    Your score is determined on how many turns you lasted.
+                </p>
+              </div>
+              <footer>
+                  <p id = "footer-info">Copyright © 2022 benchMark</p>
+                  <a id = "footer-info" href = "mailto: markconstantineau2000@gmail.com">markconstantineau2000@gmail.com</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

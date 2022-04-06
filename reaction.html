@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reaction.css">
+    <script src="reaction.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-brain"></i> benchMark</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro-section">
+        <div id="intro-div">
+            <i class="fas fa-bolt fa-7x"></i>
+            <h1 class="intro-items">Reaction Test</h1>
+            <p class="intro-items">When the red box turns green, click as fast as possible. <br> Click anywhere on this box to begin.</p>
+        </div>
+
+        <div id="wait-div">
+            <i class="fa-regular fa-hand fa-7x"></i>
+            <h1>wait for green</h1>
+        </div>
+
+        <div id="earlyClick-div">
+            <img src="https://img.icons8.com/color/96/000000/high-priority.png"/>
+            <h1>You clicked too soon!</h1>
+            <p>Click to try again.</p>
+        </div>
+
+        <div id="click-div">
+            <i class="fa-regular fa-thumbs-up fa-7x"></i>
+            <h1>Click!</h1>
+        </div>
+
+        <div id="time-div">
+            <i class="fa-regular fa-hourglass fa-5x"></i>
+            <h1 id="score">time</h1>
+            <p>Click to continue</p>
+        </div>
+
+        <div id="result-div">
+            <i class="fas fa-bolt fa-5x"></i>
+            <h2>Reaction Time</h2>
+            <h1 id="averageScore">average</h1>
+            <p>Save score or keep trying to beat your record!</p>
+            <span>
+                <button id = "saveBtn" class="save-try-btns">Save Score</button>
+                <a href ="reaction.html"><button id = "tryAgainBtn" class="save-try-btns">Try Again</button></a>
+            </span>
+        </div>
+    </div>
+
+    <div class="bottom-section">
+        <div class='row'>
+            <div class='column'>
+              <div class='left-side'>
+                    <h1>Fun Facts !</h1>
+                    <ul>
+                        <li> ⚪ Did you know that the average reaction time for humans is 0.25 seconds to a visual stimulus.</li>
+                        
+                        <li> ⚪ There was a study done with 3,305 people ages 16 to 44, researches found that the brain's response time begins to decline at 24.</li>
+                        
+                        <li> ⚪ Depending on which stimulus a person is reacting to can differ, if someone who has very fast reflexes to visual stimulus, they may not be as fast with auditory stimulus.</li>
+                    </ul>
+              </div>
+            </div>
+
+            <div class='column'>
+              <div class='right-side'>
+                <h1>Reaction Test</h1>
+                <p>
+                  This test is to test your raw reaction time. It is similar to the aim trainer where you have to react, except you don't have to move your cursor. <br><br>
+                  The way your score is calculated is you will be asked to click once the screen turns green, this process repeats 5 times. At the end it will combine all of your time and then divide it by 5, giving it your average raw reaction time.
+                </p>
+              </div>
+              <footer>
+                  <p id = "footer-info">Copyright © 2022 benchMark</p>
+                  <a id = "footer-info" href = "mailto: markconstantineau2000@gmail.com">markconstantineau2000@gmail.com</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="aimtrainer.css">
+    <script src="aimtrainer.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-brain"></i> benchMark</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro-section">
+        <div id="intro-div">
+            <i id = "mainCrosshair" class="fas fa-crosshairs fa-7x"></i>
+            <h1 class="intro-items">Aim Trainer</h1>
+            <p class="intro-items">Targets will appear randomly, hit them as fast <br>as you can.</p>
+            <button id = "start" class="intro-items">Start</button>
+        </div>
+
+        <div id = "targetCountDiv">
+            <h2 id="remainingTargets">Remaining Targets: 30</h2>
+            <i class="fa-solid fa-bullseye fa-4x"></i>
+        </div>
+
+        <div id="resultDivDisplay">
+            <div id="resultDiv">
+                <i id="mainBullseye" class="fa-solid fa-bullseye fa-6x"></i>
+                <h2>Average time per target</h2>
+                <h1 id="score">?</h1>
+                <h3>Save score or keep trying to beat your record!</h3>
+                <span class="save-try-btns">
+                    <button id = "saveBtn" class="intro-items">Save Score</button>
+                    <a href ="aimtrainer.html"><button id = "tryBtn" class="intro-items">Try Again</button></a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-section">
+        <div class='row'>
+            <div class='column'>
+              <div class='left-side'>
+                    <h1>Fun Facts !</h1>
+                    <ul>
+                        <li> ⚪ Did you know that the average reaction time for humans is 0.25 seconds to a visual stimulus.</li>
+                        
+                        <li> ⚪ There was a study done with 3,305 people ages 16 to 44, researches found that the brain's response time begins to decline at 24.</li>
+                        
+                        <li> ⚪ Depending on which stimulus a person is reacting to can differ, if someone who has very fast reflexes to visual stimulus, they may not be as fast with auditory stimulus.</li>
+                    </ul>
+              </div>
+            </div>
+
+            <div class='column'>
+              <div class='right-side'>
+                <h1>Aim Trainer</h1>
+                <p>
+                    You will be given 30 targets, you must click them as fast as possible. <br><br>
+                    This test is meant for hand-eye coordination.<br><br>
+                    Once you finish clicking all 30 targets, you will get your score, this score is <b>average</b> time it took to click each target. <br><br>
+                    Don't be discouraged if you read the fun facts on the left, this test is harder which means your results should be longer, you have to react, then move your cursor.
+                </p>
+              </div>
+              <footer>
+                  <p id = "footer-info">Copyright © 2022 benchMark</p>
+                  <a id = "footer-info" href = "mailto: markconstantineau2000@gmail.com">markconstantineau2000@gmail.com</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
